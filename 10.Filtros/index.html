@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html ng-app="MyFirstApp">
+<head>
+	<meta charset="UTF-8">
+	<title>Hola JS</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+	<script src="controller.js"></script>
+</head>
+<body ng-controller="FirstController">
+	<h2>Filtros</h2>
+	{{"Sin filtros " + miHtml}} <br>
+	{{"Con filtros " + miHtml | removeHtml}}
+
+	<br><br><h2>Filtro Json</h2>
+	{{pJson | json}}
+
+	<br><br><h2>Filtro currency</h2>
+	{{costo | currency:"$":8}}
+</body>
+</html>
