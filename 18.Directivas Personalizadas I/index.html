@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html ng-app="MyFirstApp">
+<head>
+	<meta charset="UTF-8">
+	<title>Hola JS</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+	<script src="controller.js"></script>
+	<style>.circular{border-radius: 50%;width: 100px;height: 100px;display:inline-block; }
+	</style>
+</head>
+<body ng-controller="FirstController">
+	<h2>Posts</h2>
+	
+	<ul class="no-list" ng-cloak>
+		<li ng-repeat="repo in repos">
+			<div class="circular" back-img="{{repo.owner.avatar_url}}"></div>
+			<p>{{repo.name}}</p>
+		</li>
+	</ul>
+</body>
+</html>

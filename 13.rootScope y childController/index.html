@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html ng-app="MyFirstApp">
+<head>
+	<meta charset="UTF-8">
+	<title>Hola JS</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+	<script src="controller.js"></script>
+</head>
+<body ng-controller="FirstController">
+	<h2>Root Scope</h2>
+	<span>Valor del hijo {{nombre}}</span>
+	<p>Valor del padre <span>{{$parent.nombre}}</span></p>
+
+</body>
+</html>
